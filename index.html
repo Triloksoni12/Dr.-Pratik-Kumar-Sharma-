@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5">
+<title>Pratik Kumar Sharma — i-Connectresources</title>
+<meta name="description" content="Pratik Kumar Sharma — Customer Success Manager at i-Connectresources">
+<meta property="og:title" content="Pratik Kumar Sharma — CSM at i-Connectresources">
+<meta property="og:description" content="Customer Success Manager — Digital Transformation & Automation Partner">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>&#x1F517;</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+  --indigo:#4A63FF;--electric:#2D8CFF;--azure:#00B5FF;--teal:#00C9A7;
+  --purple:#6C63FF;--bg:#F0F4FF;--card:#FFFFFF;--surface:#F7F9FF;
+  --surface2:#EEF2FF;--text:#1C2340;--sub:#4A5568;--dim:#8A93B2;
+  --border:#E2E8F8;
+  --shadow-sm:0 2px 12px rgba(74,99,255,.08);
+  --shadow-md:0 8px 30px rgba(74,99,255,.12);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  font-family:'Poppins',system-ui,sans-serif;
+  background:var(--bg);padding:16px;overflow-x:hidden;
+}
+
+/* ── Background ── */
+.bg-scene{position:fixed;inset:0;z-index:0;overflow:hidden}
+.bg-scene::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 70% 50% at 15% 20%,rgba(74,99,255,.08),transparent),
+    radial-gradient(ellipse 60% 55% at 85% 80%,rgba(0,201,167,.08),transparent),
+    radial-gradient(ellipse 50% 40% at 60% 40%,rgba(45,140,255,.05),transparent);
+}
+.bg-dots{
+  position:absolute;inset:0;opacity:.4;
+  background-image:radial-gradient(circle,#C7D2FE 1px,transparent 1px);
+  background-size:28px 28px;
+}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.1;animation:blobFloat 20s ease-in-out infinite alternate}
+.blob-1{width:520px;height:520px;background:var(--indigo);top:-15%;left:-10%;animation-duration:18s}
+.blob-2{width:420px;height:420px;background:var(--teal);bottom:-12%;right:-8%;animation-duration:24s;animation-delay:5s}
+.blob-3{width:300px;height:300px;background:var(--electric);top:40%;left:50%;animation-duration:15s;animation-delay:3s}
+@keyframes blobFloat{
+  0%{transform:translate(0,0) scale(1)}
+  33%{transform:translate(30px,-25px) scale(1.06)}
+  66%{transform:translate(-20px,30px) scale(.96)}
+  100%{transform:translate(15px,-15px) scale(1.02)}
+}
+
+/* ── Card ── */
+.card-wrap{position:relative;z-index:10;width:100%;max-width:440px}
+.card{
+  background:var(--card);border-radius:24px;border:1px solid rgba(74,99,255,.1);
+  overflow:hidden;
+  box-shadow:0 4px 6px rgba(74,99,255,.04),0 20px 60px rgba(74,99,255,.13),0 40px 100px rgba(0,0,0,.06);
+  animation:cardEnter .9s cubic-bezier(.22,1,.36,1) forwards;
+  opacity:0;transform:translateY(30px) scale(.98);
+}
+@keyframes cardEnter{to{opacity:1;transform:none}}
+
+/* ── Banner ── */
+.banner{
+  height:148px;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#1E2A78 0%,#3D52D5 28%,#4A63FF 52%,#2D8CFF 74%,#00C9A7 100%);
+  background-size:300% 300%;animation:bannerShift 10s ease infinite;
+}
+@keyframes bannerShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.banner-mesh{
+  position:absolute;inset:0;opacity:.07;
+  background-image:
+    linear-gradient(0deg,rgba(255,255,255,.2) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.2) 1px,transparent 1px);
+  background-size:40px 40px;
+}
+.banner-circles{position:absolute;inset:0;overflow:hidden}
+.banner-circles span{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.1)}
+.banner-circles span:nth-child(1){width:180px;height:180px;top:-70px;right:-50px}
+.banner-circles span:nth-child(2){width:110px;height:110px;top:15px;right:25px}
+.banner-circles span:nth-child(3){width:220px;height:220px;bottom:-90px;left:-70px}
+.banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:65px;background:linear-gradient(transparent,rgba(255,255,255,.04))}
+
+/* ── Badges ── */
+.co-badge{
+  position:absolute;top:14px;left:16px;display:flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,.18);backdrop-filter:blur(16px);
+  padding:7px 16px;border-radius:50px;border:1px solid rgba(255,255,255,.25);
+  animation:slideInL .8s .2s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes slideInL{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:none}}
+.co-icon{width:26px;height:26px;border-radius:7px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;color:var(--indigo)}
+.co-name{font-size:12px;font-weight:700;color:#fff}
+.live-badge{
+  position:absolute;top:14px;right:16px;display:flex;align-items:center;gap:5px;
+  background:rgba(0,201,167,.22);backdrop-filter:blur(12px);
+  padding:5px 13px;border-radius:40px;border:1px solid rgba(0,201,167,.35);
+  font-size:10px;color:#fff;font-weight:600;
+  animation:slideInR .8s .35s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes slideInR{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
+.live-dot{width:6px;height:6px;background:#00C9A7;border-radius:50%;animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.6)}}
+
+/* ── Profile ── */
+.profile{text-align:center;margin-top:-56px;position:relative;z-index:5;padding-bottom:4px;animation:fadeUp .8s .3s cubic-bezier(.22,1,.36,1) both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.avatar-ring{
+  width:110px;height:110px;margin:0 auto;border-radius:50%;padding:3px;
+  background:conic-gradient(var(--indigo) 0deg,var(--electric) 120deg,var(--teal) 240deg,var(--indigo) 360deg);
+  box-shadow:0 6px 30px rgba(74,99,255,.25),0 0 0 4px #fff;
+  animation:ringGlow 4s ease-in-out infinite;
+}
+@keyframes ringGlow{
+  0%,100%{box-shadow:0 6px 30px rgba(74,99,255,.25),0 0 0 4px #fff}
+  50%{box-shadow:0 8px 40px rgba(74,99,255,.38),0 0 0 4px #fff}
+}
+.avatar-inner{
+  width:100%;height:100%;border-radius:50%;
+  background:linear-gradient(135deg,#EEF2FF,#F7F9FF);
+  display:flex;align-items:center;justify-content:center;
+  border:3px solid #fff;overflow:hidden;
+}
+.avatar-text{
+  font-size:24px;font-weight:900;letter-spacing:1px;
+  background:linear-gradient(135deg,var(--indigo),var(--teal));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.profile h1{margin-top:14px;font-family:'Playfair Display',serif;font-size:21px;font-weight:900;color:var(--text)}
+.profile .role{margin-top:4px;font-size:10px;color:var(--indigo);text-transform:uppercase;letter-spacing:2.5px;font-weight:700}
+.profile .company-tag{
+  margin:10px 20px 0;font-size:12px;color:var(--sub);font-weight:600;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+
+/* ── Content ── */
+.content{padding:20px 22px 26px}
+
+/* ── Contact Rows ── */
+.contacts{display:flex;flex-direction:column;gap:7px;animation:fadeUp .7s .5s cubic-bezier(.22,1,.36,1) both}
+.c-row{
+  display:flex;align-items:center;gap:13px;padding:12px 14px;border-radius:14px;
+  background:var(--surface);border:1px solid var(--border);
+  text-decoration:none;color:var(--text);
+  transition:all .28s ease;-webkit-tap-highlight-color:transparent;
+}
+.c-row:hover{background:var(--surface2);border-color:rgba(74,99,255,.2);transform:translateX(5px);box-shadow:var(--shadow-sm)}
+.c-icon{
+  width:40px;height:40px;border-radius:12px;display:flex;
+  align-items:center;justify-content:center;font-size:15px;color:#fff;flex-shrink:0;
+}
+.c-icon.phone{background:linear-gradient(135deg,#00C853,#00E676);box-shadow:0 4px 12px rgba(0,200,83,.25)}
+.c-icon.wa{background:linear-gradient(135deg,#25D366,#128C7E);box-shadow:0 4px 12px rgba(37,211,102,.25)}
+.c-icon.email{background:linear-gradient(135deg,var(--indigo),var(--purple));box-shadow:0 4px 12px rgba(74,99,255,.25)}
+.c-icon.web{background:linear-gradient(135deg,var(--electric),var(--azure));box-shadow:0 4px 12px rgba(45,140,255,.25)}
+.c-icon.lin{background:linear-gradient(135deg,#0077B5,#00A0DC);box-shadow:0 4px 12px rgba(0,119,181,.25)}
+.c-icon.loc{background:linear-gradient(135deg,#FF6B6B,#EE5A24);box-shadow:0 4px 12px rgba(255,107,107,.25)}
+.c-label{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:1.4px;font-weight:700}
+.c-value{font-size:12.5px;color:var(--text);font-weight:600;margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.c-arrow{margin-left:auto;color:var(--dim);font-size:10px;transition:transform .2s}
+.c-row:hover .c-arrow{transform:translateX(3px);color:var(--indigo)}
+
+/* ── Sections ── */
+.sec-head{
+  font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:2.5px;
+  font-weight:700;margin:22px 0 11px;display:flex;align-items:center;gap:10px;
+}
+.sec-head::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
+.hr{height:1px;margin:20px 0;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+
+/* ── Stats ── */
+.stats{
+  display:flex;border-radius:16px;overflow:hidden;border:1px solid var(--border);
+  box-shadow:var(--shadow-sm);animation:fadeUp .7s .55s cubic-bezier(.22,1,.36,1) both;
+}
+.stat{flex:1;text-align:center;padding:16px 6px;background:var(--surface);border-right:1px solid var(--border);transition:background .25s}
+.stat:last-child{border-right:none}
+.stat:hover{background:var(--surface2)}
+.stat-val{font-size:20px;font-weight:900;background:linear-gradient(135deg,var(--indigo),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-lbl{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:1.2px;font-weight:700;margin-top:4px}
+
+/* ── Services ── */
+.services{display:flex;flex-wrap:wrap;gap:7px;animation:fadeUp .7s .6s cubic-bezier(.22,1,.36,1) both}
+.svc{
+  padding:7px 15px;border-radius:50px;font-size:10.5px;font-weight:600;
+  border:1.5px solid transparent;transition:all .25s;cursor:default;
+  background:var(--surface);color:var(--indigo);border-color:rgba(74,99,255,.15);
+}
+.svc:nth-child(2n){color:#00897B;background:#F0FDFB;border-color:rgba(0,201,167,.2)}
+.svc:nth-child(3n){color:var(--electric);background:#EFF7FF;border-color:rgba(45,140,255,.2)}
+.svc:hover{transform:translateY(-2px) scale(1.02);box-shadow:var(--shadow-sm);color:#fff;background:linear-gradient(135deg,var(--indigo),var(--electric));border-color:transparent}
+.svc:nth-child(2n):hover{background:linear-gradient(135deg,#00C9A7,#00B5FF)}
+
+/* ── Platforms ── */
+.platforms{display:flex;flex-wrap:wrap;gap:6px;animation:fadeUp .7s .65s cubic-bezier(.22,1,.36,1) both}
+.plat{
+  padding:5px 13px;border-radius:8px;font-size:9.5px;font-weight:700;
+  background:var(--surface);color:var(--sub);border:1px solid var(--border);
+  transition:all .25s;cursor:default;
+}
+.plat:hover{background:var(--indigo);color:#fff;border-color:var(--indigo);transform:translateY(-2px);box-shadow:0 4px 12px rgba(74,99,255,.2)}
+
+/* ── Socials ── */
+.socials{display:flex;justify-content:center;gap:10px;animation:fadeUp .7s .75s cubic-bezier(.22,1,.36,1) both}
+.soc-btn{
+  width:46px;height:46px;border-radius:13px;display:flex;align-items:center;
+  justify-content:center;font-size:18px;color:var(--dim);background:var(--surface);
+  border:1.5px solid var(--border);text-decoration:none;
+  transition:all .28s;-webkit-tap-highlight-color:transparent;
+}
+.soc-btn:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.soc-btn.li:hover{background:#0077B5;color:#fff;border-color:#0077B5}
+.soc-btn.wh:hover{background:#25D366;color:#fff;border-color:#25D366}
+.soc-btn.em:hover{background:var(--indigo);color:#fff;border-color:var(--indigo)}
+.soc-btn.wb:hover{background:var(--electric);color:#fff;border-color:var(--electric)}
+
+/* ── CTA Buttons ── */
+.cta-group{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px;animation:fadeUp .7s .85s cubic-bezier(.22,1,.36,1) both}
+.cta{
+  padding:13px 8px;border-radius:14px;border:none;
+  font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:700;
+  cursor:pointer;transition:all .28s;display:flex;align-items:center;
+  justify-content:center;gap:7px;text-decoration:none;
+  -webkit-tap-highlight-color:transparent;
+}
+.cta-primary{
+  background:linear-gradient(135deg,var(--indigo),var(--electric));color:#fff;
+  box-shadow:0 4px 20px rgba(74,99,255,.3);grid-column:span 2;
+}
+.cta-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(74,99,255,.4)}
+.cta-primary:active{transform:scale(.97)}
+.cta-wa{background:#F0FDF7;color:#00897B;border:1.5px solid rgba(0,201,167,.25)}
+.cta-wa:hover{background:#25D366;color:#fff;border-color:#25D366;transform:translateY(-2px)}
+.cta-share{background:var(--surface);color:var(--sub);border:1.5px solid var(--border)}
+.cta-share:hover{background:var(--surface2);border-color:rgba(74,99,255,.2);transform:translateY(-2px)}
+
+/* ── Footer ── */
+.card-foot{text-align:center;margin-top:20px;padding:14px 16px 2px;border-top:1px solid var(--border)}
+.card-foot .f1{font-size:9px;color:var(--dim);letter-spacing:.8px;text-transform:uppercase;font-weight:600}
+.card-foot .f2{font-size:8px;color:rgba(138,147,178,.5);margin-top:4px}
+
+/* ── Toast ── */
+.toast{
+  position:fixed;bottom:28px;left:50%;
+  transform:translateX(-50%) translateY(20px);
+  background:linear-gradient(135deg,var(--indigo),var(--electric));
+  color:#fff;padding:11px 26px;border-radius:50px;font-size:13px;font-weight:600;
+  opacity:0;transition:all .35s;z-index:9999;pointer-events:none;
+  box-shadow:0 10px 30px rgba(74,99,255,.3);
+  font-family:'Poppins',sans-serif;white-space:nowrap;
+}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ── Save Modal Overlay ── */
+.save-overlay{
+  position:fixed;inset:0;z-index:10000;
+  background:rgba(28,35,64,.65);backdrop-filter:blur(10px);
+  display:flex;align-items:center;justify-content:center;
+  padding:20px;animation:mFadeIn .35s ease;
+}
+@keyframes mFadeIn{from{opacity:0}to{opacity:1}}
+.save-box{
+  background:#fff;border-radius:28px;padding:38px 28px 30px;
+  text-align:center;max-width:370px;width:100%;
+  box-shadow:0 25px 70px rgba(0,0,0,.22);
+  animation:mScaleIn .45s cubic-bezier(.22,1,.36,1);
+}
+@keyframes mScaleIn{from{transform:scale(.86);opacity:0}to{transform:scale(1);opacity:1}}
+.save-box-avatar{
+  width:80px;height:80px;margin:0 auto 16px;
+  background:conic-gradient(var(--indigo),var(--electric),var(--teal),var(--indigo));
+  border-radius:50%;padding:3px;
+  box-shadow:0 8px 28px rgba(74,99,255,.3);
+}
+.save-box-avatar-inner{
+  width:100%;height:100%;border-radius:50%;background:#fff;
+  display:flex;align-items:center;justify-content:center;
+}
+.save-box-avatar-inner i{font-size:30px;color:var(--indigo)}
+.save-box h3{font-size:19px;font-weight:800;color:var(--text);margin-bottom:4px;font-family:'Playfair Display',serif}
+.save-box .sb-role{font-size:11px;color:var(--indigo);font-weight:600;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px}
+.save-box .sb-company{font-size:12px;color:var(--sub);margin-bottom:22px}
+.save-box-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;padding:15px;border:none;
+  background:linear-gradient(135deg,var(--indigo),var(--electric));
+  color:#fff;font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;
+  border-radius:14px;cursor:pointer;
+  box-shadow:0 4px 22px rgba(74,99,255,.35);transition:all .25s;
+}
+.save-box-btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(74,99,255,.45)}
+.save-box-btn:active{transform:scale(.97)}
+.save-box-skip{
+  display:block;width:100%;padding:12px;margin-top:10px;
+  border:1.5px solid var(--border);background:transparent;
+  color:var(--sub);font-family:'Poppins',sans-serif;font-size:12px;
+  font-weight:600;border-radius:12px;cursor:pointer;transition:all .25s;
+}
+.save-box-skip:hover{background:var(--surface)}
+
+/* ── Responsive ── */
+@media(max-width:400px){
+  .content{padding:16px 15px 20px}
+  .profile h1{font-size:18px}
+  .c-value{font-size:11.5px}
+  .cta{font-size:10px;padding:11px 6px}
+  .avatar-ring{width:94px;height:94px}
+  .banner{height:128px}
+  .stat-val{font-size:17px}
+  .save-box{padding:28px 20px 24px}
+  .save-box h3{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════ SAVE CONTACT MODAL (auto-shown on ?save=1) ═══════ -->
+<div id="save-modal" class="save-overlay" style="display:none">
+  <div class="save-box">
+    <div class="save-box-avatar">
+      <div class="save-box-avatar-inner"><i class="fas fa-user-plus"></i></div>
+    </div>
+    <h3>Pratik Kumar Sharma</h3>
+    <div class="sb-role">Customer Success Manager</div>
+    <div class="sb-company"><i class="fas fa-building" style="margin-right:4px;color:var(--indigo)"></i>i-Connectresources Inc.</div>
+    <button class="save-box-btn" onclick="saveAndClose()">
+      <i class="fas fa-download"></i> Save to Contacts
+    </button>
+    <button class="save-box-skip" onclick="closeSaveModal()">
+      View Card Instead
+    </button>
+  </div>
+</div>
+
+<!-- ═══════ BACKGROUND ═══════ -->
+<div class="bg-scene">
+  <div class="bg-dots"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<!-- ═══════ MAIN CARD ═══════ -->
+<div class="card-wrap">
+<div class="card" id="card">
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="banner-mesh"></div>
+    <div class="banner-circles"><span></span><span></span><span></span></div>
+    <div class="co-badge">
+      <div class="co-icon">iC</div>
+      <span class="co-name">i-Connectresources</span>
+    </div>
+    
+  </div>
+
+  <!-- Profile Section -->
+  <div class="profile">
+    <div class="avatar-ring">
+      <div class="avatar-inner">
+       <img src="1747382184994.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:50%"> for real photo
+        <span class="avatar-text">PS</span>
+      </div>
+    </div>
+    <h1>Dr.Pratik Kumar Sharma</h1>
+    <p class="role">Customer Success Manager (CSM)</p>
+    <p class="company-tag">
+      <i class="fas fa-building" style="color:var(--indigo)"></i>
+      i-Connectresources Inc.
+    </p>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- ── Contact Rows ── -->
+    <div class="contacts">
+
+      <a href="tel:+917999187014" class="c-row">
+        <div class="c-icon phone"><i class="fas fa-phone"></i></div>
+        <div style="min-width:0;flex:1">
+          <div class="c-label">Phone &middot; Tap to Call</div>
+          <div class="c-value">+91 79991 87014</div>
+        </div>
+        <i class="fas fa-chevron-right c-arrow"></i>
+      </a>
+
+      <a href="https://wa.me/917999187014?text=Hi%20Pratik%2C%20I%27d%20like%20to%20connect%20with%20you" target="_blank" rel="noopener" class="c-row">
+        <div class="c-icon wa"><i class="fab fa-whatsapp"></i></div>
+        <div style="min-width:0;flex:1">
+          <div class="c-label">WhatsApp &middot; Tap to Chat</div>
+          <div class="c-value">+91 79991 87014</div>
+        </div>
+        <i class="fas fa-chevron-right c-arrow"></i>
+      </a>
+
+      <a href="mailto:psharma@i-connectresources.com" class="c-row">
+        <div class="c-icon email"><i class="fas fa-envelope"></i></div>
+        <div style="min-width:0;flex:1">
+          <div class="c-label">Email &middot; Tap to Send</div>
+          <div class="c-value">psharma@i-connectresources.com</div>
+        </div>
+        <i class="fas fa-chevron-right c-arrow"></i>
+      </a>
+
+      <a href="https://i-connectresources.com/" target="_blank" rel="noopener" class="c-row">
+        <div class="c-icon web"><i class="fas fa-globe"></i></div>
+        <div style="min-width:0;flex:1">
+          <div class="c-label">Website</div>
+          <div class="c-value">i-connectresources.com</div>
+        </div>
+        <i class="fas fa-chevron-right c-arrow"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/dr-pratik-sharma-55851935b/" target="_blank" rel="noopener" class="c-row">
+        <div class="c-icon lin"><i class="fab fa-linkedin-in"></i></div>
+        <div style="min-width:0;flex:1">
+          <div class="c-label">LinkedIn &middot; Connect</div>
+          <div class="c-value">Dr. Pratik Sharma</div>
+        </div>
+        <i class="fas fa-chevron-right c-arrow"></i>
+      </a>
+
+      <a href="https://maps.app.goo.gl/2mGWPT7HWkvhL3ar5" target="_blank" rel="noopener" class="c-row">
+        <div class="c-icon loc"><i class="fas fa-map-marker-alt"></i></div>
+        <div style="min-width:0;flex:1">
+          <div class="c-label">Office Location</div>
+          <div class="c-value">View on Google Maps</div>
+        </div>
+        <i class="fas fa-chevron-right c-arrow"></i>
+      </a>
+
+    </div>
+
+    
+
+    <div class="hr"></div>
+
+    <!-- ── CTA Buttons ── -->
+    <div class="cta-group">
+      <button class="cta cta-primary" onclick="saveContact()">
+        <i class="fas fa-user-plus"></i> Save Contact to Phone
+      </button>
+      <button class="cta cta-primary" onclick="shareCard()">
+        <i class="fas fa-share-nodes"></i> Share Card
+      </button>
+    </div>
+
+    <!-- ── Footer ── -->
+    <div class="card-foot">
+      <div class="f1">i-Connectresources Inc. &middot; Est. 2006</div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+/* ════════════════════════════════════════════
+   vCard Data — Pratik Kumar Sharma
+   ════════════════════════════════════════════ */
+var vcardStr = [
+  'BEGIN:VCARD',
+  'VERSION:3.0',
+  'N:Sharma;Pratik;Kumar;;',
+  'FN:Pratik Kumar Sharma',
+  'ORG:i-Connectresources Inc.',
+  'TITLE:Customer Success Manager (CSM)',
+  'TEL;TYPE=CELL,VOICE:+917999187014',
+  'EMAIL;TYPE=WORK:psharma@i-connectresources.com',
+  'URL:https://i-connectresources.com',
+  'URL;TYPE=LinkedIn:https://www.linkedin.com/in/dr-pratik-sharma-55851935b/',
+  'NOTE:Customer Success Manager at i-Connectresources. Digital Transformation & Automation Partner. Est. 2006.',
+  'END:VCARD'
+].join('\r\n');
+
+/* ════════════════════════════════════════════
+   Save Contact — cross-platform
+   ════════════════════════════════════════════ */
+function saveContact() {
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  if (isIOS) {
+    // iOS: data URI opens directly in Contacts
+    window.location.href = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vcardStr);
+    showToast('Opening in Contacts...');
+  } else {
+    // Android / Desktop: blob download
+    try {
+      var blob = new Blob([vcardStr], {type:'text/vcard;charset=utf-8'});
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'Pratik_Kumar_Sharma.vcf';
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function(){
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }, 300);
+      showToast('Contact saved!');
+    } catch(e) {
+      // Final fallback
+      window.location.href = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vcardStr);
+      showToast('Contact opened!');
+    }
+  }
+}
+
+/* ════════════════════════════════════════════
+   Toast Notification
+   ════════════════════════════════════════════ */
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = '\u2713 ' + msg;
+  t.classList.add('on');
+  setTimeout(function(){ t.classList.remove('on'); }, 2800);
+}
+
+/* ════════════════════════════════════════════
+   Share Card
+   ════════════════════════════════════════════ */
+function shareCard() {
+  var data = {
+    title: 'Pratik Kumar Sharma - i-Connectresources',
+    text: 'Contact card for Pratik Kumar Sharma, Customer Success Manager at i-Connectresources',
+    url: window.location.href
+  };
+  if (navigator.share) {
+    navigator.share(data).catch(function(){});
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(window.location.href).then(function(){
+      showToast('Link copied!');
+    });
+  } else {
+    showToast('Copy the URL to share');
+  }
+}
+
+/* ════════════════════════════════════════════
+   3D Tilt Effect (desktop)
+   ════════════════════════════════════════════ */
+var card = document.getElementById('card');
+card.addEventListener('mousemove', function(e){
+  var r = card.getBoundingClientRect();
+  var x = (e.clientX - r.left)/r.width - 0.5;
+  var y = (e.clientY - r.top)/r.height - 0.5;
+  card.style.transform = 'perspective(1000px) rotateY('+(x*3)+'deg) rotateX('+(-y*3)+'deg)';
+});
+card.addEventListener('mouseleave', function(){
+  card.style.transition = 'transform .5s ease';
+  card.style.transform = 'none';
+  setTimeout(function(){ card.style.transition = ''; }, 500);
+});
+
+/* ════════════════════════════════════════════
+   AUTO-SAVE MODAL on ?save=1
+   When QR is scanned, URL has ?save=1
+   → modal appears → user taps Save → vcf downloads
+   ════════════════════════════════════════════ */
+window.addEventListener('DOMContentLoaded', function(){
+  try {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('save') === '1' || params.get('action') === 'save') {
+      document.getElementById('save-modal').style.display = 'flex';
+    }
+  } catch(e){}
+});
+
+function closeSaveModal() {
+  var m = document.getElementById('save-modal');
+  m.style.opacity = '0';
+  setTimeout(function(){
+    m.style.display = 'none';
+    m.style.opacity = '1';
+  }, 300);
+}
+
+function saveAndClose() {
+  saveContact();
+  setTimeout(closeSaveModal, 900);
+}
+</script>
+</body>
+</html>
